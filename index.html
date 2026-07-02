@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardAlerts — Know the second your card is charged</title>
+  <meta name="description" content="CardAlerts sends an instant notification for every transaction on your linked debit and credit cards — spot fraud, subscriptions, and surprise charges the moment they happen.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a56db'/%3E%3Cpath d='M16 7c-3.3 0-6 2.7-6 6v4l-2 3v1h16v-1l-2-3v-4c0-3.3-2.7-6-6-6zm-2.5 15a2.5 2.5 0 005 0h-5z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap">
+  <nav class="nav">
+    <a class="logo" href="/">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a6 6 0 00-6 6v4l-1.7 2.6a1 1 0 00.83 1.4h13.74a1 1 0 00.83-1.4L18 13V9a6 6 0 00-6-6zm-2 15a2 2 0 004 0" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      CardAlerts
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#security">Security</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-ghost" href="#get">Get the app</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <span class="kicker">Real-time transaction alerts</span>
+      <h1>Know the second your card is <span class="accent">charged.</span></h1>
+      <p class="lede">CardAlerts sends an instant notification for every transaction on your linked debit and credit cards — so you spot fraud, subscriptions, and surprise charges the moment they happen.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#get">Get CardAlerts for Android</a>
+      </div>
+      <p class="hero-note">iOS coming soon · 14-day free trial of Pro · cancel anytime</p>
+    </div>
+
+    <div class="alert-stack" aria-hidden="true">
+      <div class="alert-card">
+        <div class="alert-icon">☕</div>
+        <div class="alert-body">
+          <div class="alert-title">Starbucks</div>
+          <div class="alert-sub">Chase ····4821 · just now</div>
+        </div>
+        <div>
+          <span class="alert-amount">−$6.45</span>
+          <span class="alert-time">08:02</span>
+        </div>
+      </div>
+      <div class="alert-card">
+        <div class="alert-icon">🎬</div>
+        <div class="alert-body">
+          <div class="alert-title">Netflix</div>
+          <div class="alert-sub">Subscription renewal</div>
+        </div>
+        <div>
+          <span class="alert-amount">−$15.49</span>
+          <span class="alert-time">07:31</span>
+        </div>
+      </div>
+      <div class="alert-card">
+        <div class="alert-icon">⛽</div>
+        <div class="alert-body">
+          <div class="alert-title">Shell Gas</div>
+          <div class="alert-sub">Wells Fargo ····9077</div>
+        </div>
+        <div>
+          <span class="alert-amount">−$41.20</span>
+          <span class="alert-time">07:12</span>
+        </div>
+      </div>
+      <div class="alert-card">
+        <div class="alert-icon">💸</div>
+        <div class="alert-body">
+          <div class="alert-title">Payroll deposit</div>
+          <div class="alert-sub">Direct deposit received</div>
+        </div>
+        <div>
+          <span class="alert-amount credit">+$1,982.00</span>
+          <span class="alert-time">06:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <p class="sec-kicker">How it works</p>
+    <h2>Three steps to total card awareness</h2>
+    <p class="sec-lede">Setup takes about two minutes. Your bank credentials never touch our servers.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Link your cards</h3>
+        <p>Connect your bank securely through Plaid, the same service trusted by Venmo and American Express. You sign in on your bank's own page.</p>
+      </div>
+      <div class="step">
+        <h3>Pick your alerts</h3>
+        <p>Push, email, or SMS. Set minimum amounts so small charges stay quiet, and quiet hours so nights stay silent.</p>
+      </div>
+      <div class="step">
+        <h3>Catch everything</h3>
+        <p>Every swipe, subscription renewal, and online charge — the moment your bank reports it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <p class="sec-kicker">Features</p>
+    <h2>Built for people who hate surprises</h2>
+    <div class="features">
+      <div class="feature">
+        <span class="f-icon">⚡</span>
+        <h3>Real-time push alerts</h3>
+        <p>Usually within seconds of your bank reporting the transaction.</p>
+      </div>
+      <div class="feature">
+        <span class="f-icon">🕵️</span>
+        <h3>Fraud-spotting speed</h3>
+        <p>See charges before your statement does — and act while it matters.</p>
+      </div>
+      <div class="feature">
+        <span class="f-icon">💰</span>
+        <h3>Balance included</h3>
+        <p>Every alert can show your current balance right in the notification.</p>
+      </div>
+      <div class="feature">
+        <span class="f-icon">🌙</span>
+        <h3>Quiet hours</h3>
+        <p>Silence alerts overnight, catch up with the morning summary.</p>
+      </div>
+      <div class="feature">
+        <span class="f-icon">📬</span>
+        <h3>Email &amp; SMS add-ons</h3>
+        <p>Alerts where you actually look — not just one channel.</p>
+      </div>
+      <div class="feature">
+        <span class="f-icon">🔒</span>
+        <h3>Bank-grade security</h3>
+        <p>Tokens encrypted with AWS KMS. We never store bank credentials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <p class="sec-kicker">Pricing</p>
+    <h2>Free to start. Pro when you're hooked.</h2>
+    <p class="sec-lede">14-day free trial of Pro. Cancel anytime.</p>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0<small> /month</small></div>
+        <p class="plan-note">For keeping an eye on one account.</p>
+        <ul>
+          <li>Real-time push alerts (10/day)</li>
+          <li>Email alerts</li>
+          <li>1 linked bank</li>
+          <li>Quiet hours</li>
+          <li class="no">Balance in alerts</li>
+          <li class="no">SMS alerts</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <span class="plan-tag">Most popular</span>
+        <h3>Pro</h3>
+        <div class="price">$9<small> /month</small></div>
+        <p class="plan-note">Unlimited everything. SMS optional add-on, +$5/mo.</p>
+        <ul>
+          <li>Unlimited real-time push alerts</li>
+          <li>Email alerts</li>
+          <li>Unlimited linked banks</li>
+          <li>Balance in every alert</li>
+          <li>Quiet hours</li>
+          <li>SMS alerts (+$5/mo add-on)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section id="security">
+    <p class="sec-kicker">Security</p>
+    <div class="security">
+      <div class="lock">🔐</div>
+      <div>
+        <h3>Your credentials stay with your bank.</h3>
+        <p>CardAlerts connects through Plaid — you sign in on your bank's own page, and we receive only read-only transaction data. Access tokens are encrypted with AWS Key Management Service. We never sell your data, and notification history is deleted after 90 days. CardAlerts cannot move money, block charges, or change anything in your accounts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <p class="sec-kicker">FAQ</p>
+    <h2>Fair questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Does CardAlerts have access to my money?</summary>
+        <p>No. CardAlerts is read-only. We can see transaction descriptions and balances — we cannot move money, block charges, or make changes to your accounts.</p>
+      </details>
+      <details>
+        <summary>Which banks are supported?</summary>
+        <p>Over 12,000 US institutions via Plaid, including Chase, Bank of America, Wells Fargo, Capital One, Citi, and most credit unions.</p>
+      </details>
+      <details>
+        <summary>How fast are the alerts?</summary>
+        <p>Usually within seconds of your bank reporting the transaction. Exact speed varies by institution.</p>
+      </details>
+      <details>
+        <summary>Can I stop SMS messages?</summary>
+        <p>Yes — reply STOP to any message, or turn SMS off in the app. Message and data rates may apply; frequency varies with your card activity.</p>
+      </details>
+      <details>
+        <summary>How do I delete my data?</summary>
+        <p>Account Settings → Delete Account. All bank connections are revoked immediately and your data is deleted within 30 days.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <div class="cta-final" id="get">
+    <h2>Stop finding out on your statement.</h2>
+    <p>CardAlerts for Android is in early access. iOS coming soon.</p>
+    <a class="btn" href="mailto:irbrandonl07@gmail.com?subject=CardAlerts%20early%20access">Request early access</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <span>© 2026 CardAlerts</span>
+      <div class="foot-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="mailto:irbrandonl07@gmail.com">Support</a>
+      </div>
+    </div>
+    <p class="foot-legal">CardAlerts is not a bank and does not hold, move, or have access to your funds. Transaction data is provided by Plaid. Notifications depend on data availability from your financial institution and may occasionally be delayed — always review your official bank statements.</p>
+  </div>
+</footer>
+
+</body>
+</html>

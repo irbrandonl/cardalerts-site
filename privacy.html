@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CardAlerts</title>
+  <meta name="description" content="CardAlerts privacy policy: what we collect, how we use it, and the choices you have.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a56db'/%3E%3Cpath d='M16 7c-3.3 0-6 2.7-6 6v4l-2 3v1h16v-1l-2-3v-4c0-3.3-2.7-6-6-6zm-2.5 15a2.5 2.5 0 005 0h-5z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap">
+  <nav class="nav">
+    <a class="logo" href="/">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a6 6 0 00-6 6v4l-1.7 2.6a1 1 0 00.83 1.4h13.74a1 1 0 00.83-1.4L18 13V9a6 6 0 00-6-6zm-2 15a2 2 0 004 0" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      CardAlerts
+    </a>
+    <div class="nav-links">
+      <a href="/terms">Terms</a>
+      <a class="btn btn-ghost" href="/">Home</a>
+    </div>
+  </nav>
+</header>
+
+<main class="legal">
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective date: July 2, 2026</p>
+
+  <p>CardAlerts ("we," "us," or "our") provides a mobile application that sends real-time notifications when transactions occur on your linked debit or credit cards. This Privacy Policy explains what information we collect, how we use it, and the choices you have.</p>
+
+  <h2>Information We Collect</h2>
+  <p><strong>Account information.</strong> When you sign up, we collect your email address, which we use for authentication (passwordless magic-link sign-in) and to send transaction notifications if you enable email alerts.</p>
+  <p><strong>Financial account information.</strong> When you link a bank account, we use Plaid Inc. ("Plaid") to connect to your financial institution. Through Plaid we receive:</p>
+  <ul>
+    <li>Transaction data (merchant name, amount, date, and category)</li>
+    <li>Account balance information</li>
+    <li>The name of your financial institution</li>
+  </ul>
+  <p><strong>We never see or store your bank username or password.</strong> Your credentials are provided directly to Plaid or your bank. We do not collect or store full account numbers. The access credentials Plaid issues to us are encrypted at rest using AWS Key Management Service and are never stored in plain text. You can learn how Plaid handles your data in <a href="https://plaid.com/legal/#end-user-privacy-policy">Plaid's End User Privacy Policy</a>.</p>
+  <p><strong>Device information.</strong> If you enable push notifications, we store a push notification token that identifies your device, along with your device platform (Android or iOS).</p>
+  <p><strong>Phone number.</strong> If you enable SMS notifications, we collect the mobile phone number you provide.</p>
+  <p><strong>Payment information.</strong> Paid subscriptions are processed by Stripe, Inc. We do not collect or store your card number; Stripe provides us only a customer reference and subscription status.</p>
+
+  <h2>How We Use Your Information</h2>
+  <p>We use your information solely to operate CardAlerts:</p>
+  <ul>
+    <li>To send you real-time transaction notifications by push, email, and/or SMS, according to your preferences</li>
+    <li>To authenticate you and secure your account</li>
+    <li>To manage your subscription and billing</li>
+    <li>To provide customer support</li>
+    <li>To detect abuse and enforce rate limits</li>
+  </ul>
+  <p><strong>We do not sell your personal or financial data. We do not use your financial data for advertising, credit decisions, or any purpose other than delivering the notifications you asked for.</strong></p>
+
+  <h2>How We Share Information</h2>
+  <p>We share information only with the service providers required to operate the app:</p>
+  <table>
+    <tr><th>Provider</th><th>Purpose</th></tr>
+    <tr><td>Plaid</td><td>Connecting to your bank and retrieving transaction data</td></tr>
+    <tr><td>Stripe</td><td>Subscription billing</td></tr>
+    <tr><td>Amazon Web Services</td><td>Cloud hosting and encryption key management</td></tr>
+    <tr><td>Resend</td><td>Delivering email notifications</td></tr>
+    <tr><td>Twilio</td><td>Delivering SMS notifications</td></tr>
+    <tr><td>Expo</td><td>Delivering push notifications</td></tr>
+    <tr><td>Google Firebase</td><td>Account authentication</td></tr>
+  </table>
+  <p>We may also disclose information if required by law, subpoena, or to protect the rights, safety, or property of our users or others.</p>
+
+  <h2>Data Retention</h2>
+  <ul>
+    <li>Individual transaction notification records are automatically deleted after 90 days.</li>
+    <li>If you disconnect a bank account, we revoke our access with Plaid and stop receiving data for that account.</li>
+    <li>If you delete your account, we revoke all bank connections, cancel any subscription, disable your login, and delete your personal data within 30 days, except where retention is required by law.</li>
+  </ul>
+
+  <h2>Your Choices</h2>
+  <ul>
+    <li><strong>Notification preferences</strong> — enable or disable push, email, and SMS alerts at any time in the app.</li>
+    <li><strong>Email</strong> — every notification email includes an unsubscribe link (CAN-SPAM compliant).</li>
+    <li><strong>SMS</strong> — reply STOP to any message to opt out immediately (TCPA compliant). SMS alerts are only sent to numbers that opted in.</li>
+    <li><strong>Quiet hours</strong> — suppress notifications during hours you choose.</li>
+    <li><strong>Disconnect a bank</strong> — remove a linked account at any time in the app; we revoke access with Plaid immediately.</li>
+    <li><strong>Delete your account</strong> — available in Account Settings; see Data Retention above.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>We encrypt data in transit using TLS and at rest using industry-standard encryption. Bank access credentials are encrypted with AWS KMS customer-managed keys with least-privilege access. We log and monitor access to production systems and never write access tokens to logs.</p>
+
+  <h2>Children</h2>
+  <p>CardAlerts is a financial product intended for users 18 years of age or older. We do not knowingly collect information from anyone under 18.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If we make material changes, we will notify you through the app or by email before the changes take effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or privacy requests: <a href="mailto:irbrandonl07@gmail.com">irbrandonl07@gmail.com</a></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <span>© 2026 CardAlerts</span>
+      <div class="foot-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="mailto:irbrandonl07@gmail.com">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
