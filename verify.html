@@ -13,18 +13,39 @@
 </head>
 <body>
 <main class="legal" style="text-align:center; padding-top: 12vh;">
-  <h1>Almost signed in</h1>
-  <p style="max-width: 44ch; margin: 16px auto 8px;">
-    This sign-in link is meant to open in the <strong>CardAlerts app</strong> on your phone.
+  <h1 id="title">Almost signed in</h1>
+  <p id="msg" style="max-width: 46ch; margin: 16px auto 24px; color: #93a1bb;">
+    This sign-in link is meant to open in the <strong style="color:#e6ecf7">CardAlerts app</strong> on your phone.
   </p>
-  <p style="max-width: 46ch; margin: 0 auto 24px; color: #93a1bb;">
-    If you're reading this in a browser on the same phone where CardAlerts is installed,
-    the app didn't catch the link — make sure CardAlerts is installed, then request a fresh
-    sign-in link from the app and tap it in your email on this phone.
+  <p id="cta" style="display:none; margin: 0 auto 24px;">
+    <a id="openBtn" href="#" style="display:inline-block; background:#1a56db; color:#fff; text-decoration:none; font-weight:600; font-size:17px; padding:16px 34px; border-radius:12px;">Open CardAlerts</a>
+  </p>
+  <p id="hint" style="max-width: 46ch; margin: 0 auto 24px; color: #93a1bb; display:none;">
+    If nothing happens, make sure CardAlerts is installed on this phone, then tap the button again.
   </p>
   <p style="font-size: 14px; color: #5d6b87;">
     Sign-in links expire after 1 hour and work only once.
   </p>
 </main>
+<script>
+  (function () {
+    var qs = window.location.search || '';
+    var hasCode = /[?&](oobCode|link)=/.test(qs);
+    if (!hasCode) return; // no credentials in URL: keep the informational text
+
+    // Relaunch into the app via its private scheme — no link verification needed
+    var target = 'cardalerts://verify' + qs;
+    document.getElementById('title').textContent = 'Finish signing in';
+    document.getElementById('msg').innerHTML =
+      'Tap the button below to finish signing in to the <strong style="color:#e6ecf7">CardAlerts app</strong>.';
+    var btn = document.getElementById('openBtn');
+    btn.href = target;
+    document.getElementById('cta').style.display = 'block';
+    document.getElementById('hint').style.display = 'block';
+
+    // Also try automatically (some browsers require the user gesture; the button covers that)
+    setTimeout(function () { window.location.href = target; }, 350);
+  })();
+</script>
 </body>
 </html>
