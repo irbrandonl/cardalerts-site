@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.cardalerts",
+      "sha256_cert_fingerprints": [
+        "60:ED:13:BD:DA:B9:34:FE:3D:C0:B8:BA:7E:E9:5E:44:49:CA:71:1E:91:B7:33:AD:BC:0D:69:6A:29:FB:BE:F3"
+      ]
+    }
+  }
+]
